@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() 
+{
+  int i, n, Even_Sum = 0, Odd_Sum = 0;
+  scanf("%d", &n);
+  for(i=0;i<=n;i++)
+  {
+    if ( i%2 == 0 ) 
+    {
+       Even_Sum = Even_Sum + i;
+    }
+    else
+    {
+  	Odd_Sum = Odd_Sum + i;
+    } 
+  }
+  printf("\neven sum  = %d", Even_Sum);
+  printf("\n odd sum = %d", Odd_Sum);
+  printf("\n Difference between them is= %d",Even_Sum-Odd_Sum);
+
+  return 0;
+}
